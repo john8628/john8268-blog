@@ -1,3 +1,4 @@
+
 const { promises: fs } = require('fs')
 const path = require('path')
 const RSS = require('rss')
@@ -6,18 +7,18 @@ const matter = require('gray-matter')
 async function generate() {
   const feed = new RSS({
     title: 'Your Name',
-    site_url: 'https://yoursite.com',
-    feed_url: 'https://yoursite.com/feed.xml',
+    site_url: 'http://localhost:3000/',
+    feed_url: 'http://localhost:3000/feed.xml',
   })
 
   const posts = await fs.readdir(path.join(__dirname, '..', 'pages', 'posts'))
 
   await Promise.all(
     posts.map(async (name) => {
-      if (name.startsWith('index.')) return
-
+      if (name.startsWith('index.') && name.startsWith("t") && !name.endsWith('.md')) return
       const content = await fs.readFile(
         path.join(__dirname, '..', 'pages', 'posts', name)
+
       )
       const frontmatter = matter(content)
 

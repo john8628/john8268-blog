@@ -1,0 +1,35 @@
+---
+title: jira restful API
+date: 2018/3/18
+description: jira restful API.
+tag: web development
+author: john8268
+---
+
+#简介
+
+约书亚·布洛克（英语：Joshua J. Bloch，1961年8月28日－），美国著名[程序员](https://zh.wikipedia.org/wiki/%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88%E5%B8%AB "程序员")。他为[Java平台](https://zh.wikipedia.org/wiki/Java%E5%B9%B3%E8%87%BA "Java平台")设计并实作了许多的功能，曾担任Google的首席[Java](https://zh.wikipedia.org/wiki/JAVA "JAVA")架构师（Chief Java Architect）。
+
+#花边新闻：
+
+他是一个活跃的政治评论者，最近一直在他的推文中评论trump团队竞选丑闻事件。不过受人敬仰的，资深的程序猿，也到60岁了，近日完成了effect java （3rd Edition）书本中所有代码的编写。
+
+#生平： 
+
+布洛克大学就读于[哥伦比亚大学](https://zh.wikipedia.org/wiki/%E5%93%A5%E5%80%AB%E6%AF%94%E4%BA%9E%E5%A4%A7%E5%AD%B8 "哥伦比亚大学")，主修计算机科学，在[卡内基美隆大学](https://zh.wikipedia.org/wiki/%E5%8D%A1%E5%85%A7%E5%9F%BA%E7%BE%8E%E9%9A%86%E5%A4%A7%E5%AD%B8 "卡内基美隆大学")得到计算机科学的博士学位[[1]](https://zh.wikipedia.org/wiki/%E7%B4%84%E6%9B%B8%E4%BA%9E%C2%B7%E5%B8%83%E6%B4%9B%E5%85%8B#cite_note-about-1)。他在1990年发表的博士论文《复制抽象资料物件的一个实用方法》（A Practical Approach to Replication of Abstract Data Objects）[[2]](https://zh.wikipedia.org/wiki/%E7%B4%84%E6%9B%B8%E4%BA%9E%C2%B7%E5%B8%83%E6%B4%9B%E5%85%8B#cite_note-2)，曾被提名为[ACM](https://zh.wikipedia.org/wiki/ACM "ACM")杰出博士论文奖[[3]](https://zh.wikipedia.org/wiki/%E7%B4%84%E6%9B%B8%E4%BA%9E%C2%B7%E5%B8%83%E6%B4%9B%E5%85%8B#cite_note-3)。
+
+他曾在[Transarc](https://zh.wikipedia.org/w/index.php?title=Transarc&action=edit&redlink=1 "Transarc（页面不存在）")担任资深系统工程师，后至[昇阳电脑](https://zh.wikipedia.org/wiki/%E6%98%87%E9%99%BD%E9%9B%BB%E8%85%A6 "昇阳电脑")工作，领导开发了包括[Java集合框架](https://zh.wikipedia.org/wiki/Java%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6 "Java集合框架")，java.math套件与assert机制等功能[[1]](https://zh.wikipedia.org/wiki/%E7%B4%84%E6%9B%B8%E4%BA%9E%C2%B7%E5%B8%83%E6%B4%9B%E5%85%8B#cite_note-about-1)。2004年6月，他转换跑道到Google，担任Google首席[Java](https://zh.wikipedia.org/wiki/JAVA "JAVA")架构师[[4]](https://zh.wikipedia.org/wiki/%E7%B4%84%E6%9B%B8%E4%BA%9E%C2%B7%E5%B8%83%E6%B4%9B%E5%85%8B#cite_note-4) 。2012年8月3日，自Google离职[[5]](https://zh.wikipedia.org/wiki/%E7%B4%84%E6%9B%B8%E4%BA%9E%C2%B7%E5%B8%83%E6%B4%9B%E5%85%8B#cite_note-5)。
+
+#劝勉
+
+作为java进阶的必读教材的作者；去年他已经出版了第三版的 effect java，整合java7-9的新特性，包括lambdas, streams,optionals,Default methods, try-with-resource;Modules；最好读英文原文～～
+
+特别声明：大部分内容来自于维基百科，约书亚本人的推特
+
+参考文献：
+
+>- Joshua J. Bloch GitHub :[https://github.com/jbloch](https://github.com/jbloch) 
+Joshua J. Bloch twitter :[https://twitter.com/joshbloch](https://twitter.com/joshbloch)
+Joshua J.Bloch wiki : [https://zh.wikipedia.org/wiki/%E7%B4%84%E6%9B%B8%E4%BA%9E%C2%B7%E5%B8%83%E6%B4%9B%E5%85%8B](https://zh.wikipedia.org/wiki/%E7%B4%84%E6%9B%B8%E4%BA%9E%C2%B7%E5%B8%83%E6%B4%9B%E5%85%8B)
+《Effective Java 第三版》新条目介绍 :[https://blog.csdn.net/u014717036/article/details/80588806](https://blog.csdn.net/u014717036/article/details/80588806)
+Effect java (3rd Edtion)  亚马逊购买链接：[https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997](https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997)

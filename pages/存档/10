@@ -1,0 +1,62 @@
+---
+title: jira restful API
+date: 2018/3/18
+description: jira restful API.
+tag: web development
+author: john8268
+---
+
+原文链接 [https://bitcoin.org/bitcoin.pdf](https://bitcoin.org/bitcoin.pdf)
+
+
+**摘要**：传统的交易，需要可信任的第三方，需要防止double spending的发生；他提出通过点对点的网络，对时间戳的交易进行加密，组成（most power of CPU）最有价值的交易记录链（能够防止被别人攻击）
+
+**简介**：传统的现金交易是需要可信任的第三方进行处理交易的过程；第三方调解以及中介 （保护买卖双方的利益）的作用非常耗成本；本文提出来的点对点的交易系统，只要大部分的节点是诚实的；这种基于点对点交易发布基于时间戳交易系统，是安全可靠，防止double spending的问题；
+
+>- 第一部分介绍的交易： 
+ 我们定义电子记录链，作为记录交易的完整过程；每个拥有货币的人通过将上一笔交易的哈希值以及自己的公钥分发下一个交易者；这样收款者就能够确认这笔交易的拥有者；但是同样会遇到一个问题，就是收款者不能确认这笔款项有没有被double spending 过；传统的解决方案是通过，可信任的第三方完成双向check的过程。
+电子交易系统如何保证，这笔交易，之前没有被交易过；按照我们的理解，所有的交易都是有时间的先后顺序的；
+通过去可信任的第三方完成一笔交易，需要对交易进行公开，同时需要大部分区块认可这笔交易的时间
+
+
+![image.png](https://upload-images.jianshu.io/upload_images/5294752-fae87f00fc177a10.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+第三部分： 时间戳的服务器（核心概念）
+我们提出基于时间戳的区块，通过所有的交易组合成一个block，对这个block进行求哈希；然后通过哈希树将这些hash；区块头的大小为80字节，由4字节的版本号、32字节的上一个区块的散列值、32字节的Merkle Root Hash、4字节的时间缀（当前时间）、4字节的当前难度值、4字节的随机数组成，然后将这些值组合成一个时间链；
+第四部分：工作量证明（核心概念）
+
+完成一个点对点的分布式的时间戳服务，我们需要用到Adam back的hashcash,而不是报纸和世界性的新闻；
+工作量通过
+通过sha-256算法，对上述的80字节的数据进行hash,得出的值需要比required value(前缀有若干个000，来表明计算的难度)要小。通过随机值不断的调整，最终算出符合要求的hash值；
+一个计算出这块block，除了重做这个过程，否则不能对数据进行更改； 工作量的证明，解决了很多做决定的工作，然后大部分的节点，
+
+第五部分： 网络
+
+系统网络运行如下：
+
+1: 每笔电子交易都会全网广播到所有的节点；
+
+2: 每个节点收集新的交易记录，然后组合成一个区块；
+
+3: 每个节点为这个区块找出最难的工作量证明；
+
+4: 当一个节点找到，该时刻的工作量证明，则将新的区块像全网广播；
+
+5: 所有的交易记录都是i准确的，并且没有被使用过，才会加入新的区块；
+
+6:6: 节点通过在创建下一个块的过程中表达对块的接受。链，使用接受块的哈希值作为以前的哈希值。
+节点总是任务最长的链式准确的并且试图扩展她， 如果两个节点同时出现了分叉，一些节点可以选择接受其中之一，
+
+第五部分： 奖励
+    奖励矿工挖矿
+第六部分： 节省硬盘空间
+通过merke tree，只存交易root hash，在长链中不存每笔交易详情
+
+第七部分：
+
+参考文献：
+阮一峰：http://www.ruanyifeng.com/blog/2018/01/bitcoin-tutorial.html
+工作量证明： [http://www.infoq.com/cn/articles/bitcoin-and-block-chain-part02](http://www.infoq.com/cn/articles/bitcoin-and-block-chain-part02)
+工作量证明(PoW)和股权证明(PoS)： [https://medium.com/loom-network-chinese/%E4%BA%86%E8%A7%A3%E5%8C%BA%E5%9D%97%E9%93%BE%E7%9A%84%E5%9F%BA%E6%9C%AC-%E7%AC%AC%E4%BA%8C%E9%83%A8%E5%88%86-%E5%B7%A5%E4%BD%9C%E9%87%8F%E8%AF%81%E6%98%8E-pow-%E5%92%8C%E8%82%A1%E6%9D%83%E8%AF%81%E6%98%8E-pos-7778fab47827](https://medium.com/loom-network-chinese/%E4%BA%86%E8%A7%A3%E5%8C%BA%E5%9D%97%E9%93%BE%E7%9A%84%E5%9F%BA%E6%9C%AC-%E7%AC%AC%E4%BA%8C%E9%83%A8%E5%88%86-%E5%B7%A5%E4%BD%9C%E9%87%8F%E8%AF%81%E6%98%8E-pow-%E5%92%8C%E8%82%A1%E6%9D%83%E8%AF%81%E6%98%8E-pos-7778fab47827)
+
+花链翻译链接 ： http://www.hualian.me/archives/64784

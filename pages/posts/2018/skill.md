@@ -1,3 +1,11 @@
+---
+title: jira restful API
+date: 2018/3/18
+description: jira restful API.
+tag: web development
+author: john8268
+---
+
 编程能力升级必须知道的几个点
 >- 学好英文，码农升级打怪必备方式，
 >-  用好搜索技能,学会用关键字搜索解决现在的问题；如果你还不知道怎么用Google就不是一个合格的程序狗
