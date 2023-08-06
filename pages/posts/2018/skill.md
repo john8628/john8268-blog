@@ -1,5 +1,5 @@
 ---
-title: jira restful API
+title: skill
 date: 2018/3/18
 description: jira restful API.
 tag: web development

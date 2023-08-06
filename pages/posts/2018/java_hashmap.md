@@ -1,3 +1,11 @@
+---
+title: 红黑树部分(第一部分)
+date: 2018/3/18
+description: 
+tag: web development
+author: john8268
+---
+
 # 红黑树部分(第一部分)
 ### 红黑树的性质：
 >-  根结点是黑色的

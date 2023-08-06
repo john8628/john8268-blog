@@ -16,3 +16,4 @@ author: You
 - 2021
 - 2022
 - 2023
+  - [data storage of data lake](2023/data_lake/data_store.md)
