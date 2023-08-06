@@ -1,5 +1,13 @@
-#红黑树部分(第一部分)
-###红黑树的性质：
+---
+title: 红黑树部分(第一部分)
+date: 2018/3/18
+description: 
+tag: web development
+author: john8268
+---
+
+# 红黑树部分(第一部分)
+### 红黑树的性质：
 >-  根结点是黑色的
 >- 每个节点，不是黑色的就是红色的
 >- 每个叶子结点（每个根结点为null或nil节点）都是黑色的
@@ -8,12 +16,12 @@
 
 
 红黑树是一种二叉查找树，
-###红黑树的查找
+### 红黑树的查找
 >- 树的查找，是树插入、删除的核心；是否能够快速的查找到树，决定了红黑树插入和删除的效率
 >- 红黑树的查找，参考二叉平衡树的查找；同时，hashmap中的红黑树按照hash值的大小进行插入
 ![红黑树查找流程图.png](https://upload-images.jianshu.io/upload_images/5294752-851bb334036646e8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-#####红黑树查找
+##### 红黑树查找
 ````
          /**
          * Finds the node starting at root p with the given hash and key.
@@ -57,13 +65,13 @@
             return null;
         }
 ````
-####上述精妙之处，也是看代码困惑的地方
+#### 上述精妙之处，也是看代码困惑的地方
 >- comparableClassFor与compareComparables的使用;第一个方法是判断该entry中K对应的包装类，是否能够实现了class <?> comparable<K v>接口(class C implements  Comparable<C>);第二个方法： compareComparables 比较两个k h的值，如果h比h小，则遍历左子树，否则右子树
 >- (q = pr.find(h, k, kc)) != null 执行这句的前提是，p的key和当前节点key不相同；同时p的key的包装类不能比较大小；则需要将p左右的子树遍历一遍；先将右子树遍历完，如果找到停止，否则遍历左子树
 
 
-###红黑树的插入
-####红黑树插入的方法，类似于find的方法；
+### 红黑树的插入
+#### 红黑树插入的方法，类似于find的方法；
 
 ```
          /**
@@ -125,7 +133,9 @@
             }
         }
 ````
-###红黑树的删除
+
+### 红黑树的删除
+
 ```
 /**
          * Removes the given node, that must be present before this call.
@@ -260,9 +270,12 @@
 >- 不符合上述红黑树性质的，都需要着色调整，或者旋转调整
 
   
-###左旋
+### 左旋
 ####
+
 ![image.png](https://upload-images.jianshu.io/upload_images/5294752-b7d1c0e75c549341.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+
 ```
  /* ------------------------------------------------------------ */
         // Red-black tree methods, all adapted from CLR

@@ -1,5 +1,5 @@
 ---
-title: 文档目录
+title: content
 date: 2021/3/19
 description: View examples of all possible Markdown options.
 tag: web development
@@ -16,3 +16,4 @@ author: You
 - 2021
 - 2022
 - 2023
+  - [data storage of data lake](2023/data_lake/data_store.md)
